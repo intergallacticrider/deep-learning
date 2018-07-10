@@ -47,7 +47,8 @@ import tensorflow as tf
 import common
 import gen
 import model
-
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
 def code_to_vec(p, code):
     def char_to_vec(c):
